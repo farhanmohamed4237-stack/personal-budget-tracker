@@ -93,3 +93,66 @@ In Week 3, I improved the visual appearance of my existing Personal Budget & Exp
 
 ### Week 3 Outcome
 The Budget Tracker now has a more polished and consistent appearance. The project remains an HTML and CSS prototype, with JavaScript functionality planned for future development.
+
+## Week 4: SpendWise Dashboard Shell — CSS Grid & Flexbox
+
+### Project Overview
+
+SpendWise is a responsive personal budget and expense tracking dashboard built using HTML5 and CSS3. This Week 4 update transforms the original Budget Tracker into a modern financial dashboard using CSS Grid, Flexbox, CSS custom properties, and responsive design.
+
+### Dashboard Features
+
+- **Sidebar Navigation:** Provides links to the Dashboard, Add Expense, Expenses, and Budget Tips sections.
+- **Dashboard Header:** Displays the application heading, description, and reporting month.
+- **Financial Summary:** Shows the monthly budget, total expenses, and remaining budget using sample financial data.
+- **Six Spending Category Cards:** Displays financial information for Food, Transport, Rent, Entertainment, Savings, and Utilities.
+- **Add Expense Form:** Contains fields for entering an expense name, amount, and category.
+- **Expense Table:** Displays five sample transactions with their amounts, categories, and dates.
+- **Budgeting Tips:** Includes instructions and an educational budgeting video.
+
+### CSS Techniques Used
+
+**CSS Grid:** Used to create the overall dashboard layout, arrange the financial summary cards, and organize the six spending category cards.
+
+**Flexbox:** Used to arrange the sidebar navigation, align the dashboard header, and organize information inside individual cards.
+
+**CSS Custom Properties:** Defined in the `:root` selector to maintain consistent brand colors, accent colors, background colors, and text colors.
+
+**Responsive Design:** Uses CSS media queries to adapt the dashboard to different screen sizes. Below 768px, the layout changes to a single column. The responsive design was tested using Chrome DevTools with an iPhone 16 screen size.
+
+**Card Micro-interactions:** The category cards use hover and keyboard-focus effects with `transform` and `box-shadow`. The transitions last 200 milliseconds, meeting the assignment requirement of 250 milliseconds or less.
+
+**Dark Theme:** Includes an optional dark theme using `@media (prefers-color-scheme: dark)` and CSS variable overrides.
+
+### Technologies Used
+
+- HTML5
+- CSS3
+- CSS Grid
+- CSS Flexbox
+- CSS Media Queries
+- CSS Custom Properties
+- Google Fonts
+
+### Project Files
+
+- `index.html` — Contains the dashboard structure, sidebar navigation, financial summary, six category cards, expense form, expense table, and budgeting video.
+- `style.css` — Contains the dashboard styling, CSS Grid and Flexbox layouts, responsive design, card animations, and color themes.
+- `README.md` — Provides project documentation, features, technologies, and development progress.
+
+### Testing
+
+The dashboard was tested in Google Chrome.
+
+- Desktop layout displays the sidebar, header, and financial cards.
+- Mobile responsiveness was verified using Chrome DevTools with an iPhone 16 screen size of 393px.
+- Financial cards stack vertically on smaller screens.
+- Card hover animations were tested successfully.
+
+### Important Note
+
+This project is currently a static dashboard prototype developed for PLP Web Development Week 4. All financial information is sample data. The Add Expense button is not yet functional. Interactive features will be introduced in future development stages.
+
+### Conclusion
+
+The Week 4 update establishes a clean, responsive, and visually organized foundation for the SpendWise personal finance dashboard. It demonstrates practical use of CSS Grid, Flexbox, CSS variables, responsive layouts, and micro-interactions.

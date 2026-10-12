@@ -1,4 +1,6 @@
 
+/* WEEK 2: PERSONAL BUDGET & EXPENSE TRACKER */
+
 /* Style the whole page */
 body {
     font-family: Arial, sans-serif;
@@ -7,37 +9,103 @@ body {
     margin: 30px;
 }
 
-/* Style the main heading */
+/* Main heading and logo */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
 h1 {
     color: #2563eb;
     text-align: center;
 }
 
-/* Style the page description */
-body > p {
+header p {
     text-align: center;
 }
 
-/* Style the Add Expense section using an ID selector */
+/* Section headings */
+h2 {
+    color: #1e40af;
+}
+
+/* Add Expense section */
 #add-expense {
-    background-color: #ffffff;
+    background-color: white;
     padding: 20px;
     margin-top: 25px;
     border: 1px solid #ddd;
     border-radius: 10px;
 }
 
-/* Style the input fields */
-input {
+/* Descendant selector: form labels */
+.add-expense-section label {
     display: block;
-    width: 90%;
-    padding: 10px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* Style form inputs and dropdown */
+input,
+select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
     margin: 10px 0 20px;
     border: 1px solid #aaa;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-/* Style the Your Expenses section */
+/* Advanced selector: negation pseudo-class */
+input:not([type="submit"]) {
+    background-color: #fafafa;
+}
+
+/* Advanced selector: focus state */
+input:focus,
+select:focus {
+    border-color: #2563eb;
+    outline: 2px solid #bfdbfe;
+}
+
+/* Add Expense button */
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Expandable instructions */
+.instructions-section {
+    background-color: #fef3c7;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #92400e;
+}
+
+/* Your Expenses section */
 #your-expenses {
     background-color: #e0f2fe;
     padding: 20px;
@@ -45,13 +113,52 @@ input {
     border-radius: 10px;
 }
 
-/* Style the section headings */
-h2 {
-    color: #1e40af;
+/* Expense table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
 }
 
-/* Class selector for placeholder text */
-.placeholder-text {
-    color: #64748b;
-    font-style: italic;
+/* Descendant selector: expense table cells */
+.expenses-section td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+/* Table headings */
+th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Colored table header */
+thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Position-based pseudo-class */
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* Table row hover effect */
+tbody tr:hover {
+    background-color: #bfdbfe;
+}
+
+/* Budgeting video section */
+.video-section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+/* Make the video fit smaller screens */
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
 }

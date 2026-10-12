@@ -60,3 +60,36 @@ The project started in Week 1 with a basic HTML structure and CSS styling. In We
 ## Future Improvements
 
 In future weeks, I plan to add JavaScript to make the Add Expense button functional, allow users to add and remove expenses, and calculate total expenses and remaining budget.
+
+## Week 3: Visual Identity and CSS Improvements
+
+In Week 3, I improved the visual appearance of my existing Personal Budget & Expense Tracker using CSS. The focus was on creating a consistent, professional, and user-friendly design without changing the HTML structure or adding new functionality.
+
+### 1. Color Palette
+- Applied navy blue (`#123b5d`) to headings and table headers.
+- Used teal (`#0d9488`) for buttons and interactive elements.
+- Applied light grey (`#f1f5f9`) to the page background.
+- Used white cards to create a clean and organized layout.
+
+### 2. Typography
+- Imported Poppins from Google Fonts for headings.
+- Used Inter from Google Fonts for body text, form labels, buttons, and table content.
+- Improved readability through consistent font sizes, weights, and spacing.
+
+### 3. Form and Table Styling
+- Improved the Add Expense form with rounded input fields, padding, and focus effects.
+- Styled the Add Expense button with teal coloring and a hover effect.
+- Added a navy blue table header, cell borders, and consistent padding.
+- Applied alternating row colors and hover effects to the expense table.
+
+### 4. CSS Box Model
+- Used margins and padding to separate and organize page sections.
+- Applied borders, rounded corners, and subtle shadows.
+- Designed the page heading, Add Expense form, and Expense Table as separate visual cards.
+
+### 5. Responsive Design
+- Added CSS media queries to improve the layout on smaller screens.
+- Adjusted spacing, heading sizes, and table text for mobile devices.
+
+### Week 3 Outcome
+The Budget Tracker now has a more polished and consistent appearance. The project remains an HTML and CSS prototype, with JavaScript functionality planned for future development.

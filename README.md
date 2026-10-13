@@ -264,3 +264,64 @@ The Add Expense button is not yet functional. Additional interactive features wi
 ### Conclusion
 
 The Week 6 update introduces the JavaScript foundation of SpendWise by demonstrating variables, data types, user input, mathematical calculations, reusable functions, and console output. These features prepare the application for future interactive budget tracking functionality.
+
+## Make SpendWise Interactive — JavaScript Enhancement
+
+### Overview
+This week, SpendWise was improved from a mostly static budgeting dashboard into an interactive personal budget tracker. Users can now add expenses through a form, view updated financial summaries, and receive feedback about their spending.
+
+### Improvements Made
+- Made the Add Expense form functional.
+- Added automatic calculations for total expenses and remaining budget.
+- Updated the expense table dynamically.
+- Added automatic updates for spending categories and percentages.
+- Added budget warnings when expenses exceed the available budget.
+- Added form validation to prevent invalid entries.
+
+### Conditional Statements
+JavaScript `if`, `else if`, and `else` statements check the remaining budget. The application displays different messages depending on whether the user is within budget, has spent the entire budget, or has exceeded it.
+
+### Arrays
+Expense records are stored in a JavaScript array called `expenses`. Each expense is an object containing its name, amount, category, and date. New expenses are added using the `push()` method.
+
+### Loops
+`for...of` loops process the expense records to calculate total spending, calculate category totals, and display expense records in the table.
+
+### DOM Manipulation
+JavaScript updates webpage elements using `document.getElementById()` and `textContent`. New expense table rows are created using `document.createElement()` and `appendChild()`.
+
+### Event Handling
+An event listener is attached to the Add Expense form using `addEventListener("submit", ...)`. When the user submits the form, JavaScript validates the input, adds the new expense to the array, recalculates the budget, and updates the dashboard without reloading the page.
+
+### Testing
+The following functionality was tested:
+- Initial budget and expense calculations.
+- Adding a new expense.
+- Automatic updates to the expense table.
+- Automatic updates to financial summary cards.
+- Updates to category spending.
+- Form validation for required fields.
+- Budget warnings when spending exceeds the monthly budget.
+
+### Challenges and Solutions
+
+**Challenge:** The original dashboard displayed static financial figures.
+
+**Solution:** Used DOM manipulation to connect the financial summary cards to JavaScript calculations.
+
+**Challenge:** The Add Expense button did not initially record expenses.
+
+**Solution:** Connected the form to a JavaScript submit event listener.
+
+**Challenge:** The application needed to manage multiple expense records.
+
+**Solution:** Used an array of expense objects and loops to calculate totals and display records.
+
+### Current Limitation
+Expense data is stored in JavaScript memory. Newly added expenses are lost when the page is refreshed. Permanent data storage can be added in a future version.
+
+### Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- GitHub

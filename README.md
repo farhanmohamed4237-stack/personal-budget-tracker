@@ -156,3 +156,111 @@ This project is currently a static dashboard prototype developed for PLP Web Dev
 ### Conclusion
 
 The Week 4 update establishes a clean, responsive, and visually organized foundation for the SpendWise personal finance dashboard. It demonstrates practical use of CSS Grid, Flexbox, CSS variables, responsive layouts, and micro-interactions.
+
+## Week 6: JavaScript Foundation for SpendWise
+
+### Project Overview
+
+SpendWise is a personal budget and expense tracking dashboard built using HTML5, CSS3, and JavaScript. This Week 6 update introduces JavaScript functionality that allows users to enter financial information, calculate expenses, and determine their remaining budget.
+
+### JavaScript Concepts Implemented
+
+**1. Variables and Data Types**
+
+The application uses JavaScript variables to store budgeting information, including the monthly budget, food expenses, transport expenses, and rent expenses.
+
+The `const` keyword is used to declare variables. Strings store text information, while numbers store financial amounts for calculations.
+
+**2. Collecting User Input**
+
+The application uses the JavaScript `prompt()` function to collect information directly from users.
+
+Users are asked to enter:
+- Monthly budget
+- Food expenses
+- Transport expenses
+- Rent expenses
+
+The information is stored in variables for further processing.
+
+**3. Converting User Input**
+
+JavaScript's `Number()` function converts the values entered through prompts from strings into numbers.
+
+This ensures the application can perform mathematical calculations correctly.
+
+**4. Budget Calculations**
+
+The application calculates total expenses by adding food, transport, and rent expenses.
+
+Total Expenses = Food Expenses + Transport Expenses + Rent Expenses
+
+It then calculates the remaining budget by subtracting total expenses from the monthly budget.
+
+Remaining Balance = Monthly Budget - Total Expenses
+
+**5. Reusable Functions**
+
+The application includes two reusable JavaScript functions:
+
+- `calculateTotalExpenses()` — Calculates the total amount spent across expense categories.
+- `calculateRemainingBalance()` — Calculates the amount of money remaining after deducting expenses from the monthly budget.
+
+These functions help organize the application code and make calculations easier to reuse.
+
+**6. Displaying Results**
+
+The application uses `console.log()` to display clearly labeled financial information in the browser's Developer Tools Console.
+
+The displayed results include the monthly budget, individual expenses, total expenses, and remaining balance.
+
+### Example Budget Calculation
+
+The application was tested using the following sample values:
+
+| Budget Information | Amount |
+|---|---|
+| Monthly Budget | KES 50,000 |
+| Food Expenses | KES 2,500 |
+| Transport Expenses | KES 300 |
+| Rent Expenses | KES 15,000 |
+| Total Expenses | KES 17,800 |
+| Remaining Balance | KES 32,200 |
+
+### Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- CSS Grid
+- CSS Flexbox
+- CSS Media Queries
+- Google Fonts
+
+### Project Files
+
+- `index.html` — Contains the SpendWise Dashboard structure and links the JavaScript file.
+- `style.css` — Provides the dashboard styling, responsive layout, colors, and animations.
+- `script.js` — Stores application data, collects user input, performs calculations, and displays results.
+- `README.md` — Documents the project features, technologies, and development progress.
+
+### Testing
+
+The application was tested successfully in Google Chrome.
+
+- The JavaScript file loaded successfully.
+- Four input prompts appeared correctly.
+- User inputs were converted into numbers.
+- Total expenses were calculated correctly.
+- The remaining balance was calculated correctly.
+- Results were displayed clearly in the Chrome Developer Tools Console.
+
+### Important Note
+
+This Week 6 implementation focuses on JavaScript fundamentals. The dashboard currently displays sample financial information, while JavaScript calculations appear in the browser console.
+
+The Add Expense button is not yet functional. Additional interactive features will be implemented in future project updates.
+
+### Conclusion
+
+The Week 6 update introduces the JavaScript foundation of SpendWise by demonstrating variables, data types, user input, mathematical calculations, reusable functions, and console output. These features prepare the application for future interactive budget tracking functionality.

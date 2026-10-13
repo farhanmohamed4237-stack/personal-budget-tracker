@@ -11,7 +11,7 @@
 
 <div class="dashboard-layout">
 
-    <!-- Sidebar Navigation -->
+    <!-- Sidebar -->
     <aside class="sidebar">
         <div class="brand">
             <img
@@ -23,144 +23,124 @@
         </div>
 
         <nav aria-label="Main navigation">
-            <a href="#dashboard" class="nav-link active">
-                Dashboard
-            </a>
-            <a href="#add-expense" class="nav-link">
-                Add Expense
-            </a>
-            <a href="#your-expenses" class="nav-link">
-                Expenses
-            </a>
-            <a href="#budget-tips" class="nav-link">
-                Budget Tips
-            </a>
+            <a href="#dashboard" class="nav-link active">Dashboard</a>
+            <a href="#add-expense" class="nav-link">Add Expense</a>
+            <a href="#your-expenses" class="nav-link">Expenses</a>
+            <a href="#budget-tips" class="nav-link">Budget Tips</a>
         </nav>
 
-        <p class="sidebar-footer">
-            Personal Budget Tracker
-        </p>
+        <p class="sidebar-footer">Personal Budget Tracker</p>
     </aside>
 
     <!-- Main Dashboard -->
     <main class="main-content" id="dashboard">
 
-        <!-- Dashboard Header -->
+        <!-- Header -->
         <header class="dashboard-header">
             <div>
                 <p class="eyebrow">Personal Finance Dashboard</p>
                 <h1>My Budget Overview</h1>
                 <p>Track your spending and manage your money.</p>
             </div>
-
-            <div class="header-badge">
-                October 2026
-            </div>
+            <div class="header-badge">October 2026</div>
         </header>
 
         <!-- Financial Summary -->
-        <section class="summary-section"
-                 aria-labelledby="summary-heading">
-
+        <section class="summary-section" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Financial Summary</h2>
 
             <div class="summary-grid">
 
                 <div class="summary-card">
                     <span>Total Budget</span>
-                    <strong>KES 50,000</strong>
-                    <small>Sample monthly budget</small>
+                    <strong id="total-budget">KES 50,000</strong>
+                    <small>Monthly budget</small>
                 </div>
 
                 <div class="summary-card">
                     <span>Total Expenses</span>
-                    <strong>KES 19,600</strong>
-                    <small>Sample recorded expenses</small>
+                    <strong id="total-expenses">KES 19,600</strong>
+                    <small>Recorded expenses</small>
                 </div>
 
                 <div class="summary-card">
                     <span>Remaining Budget</span>
-                    <strong>KES 30,400</strong>
+                    <strong id="remaining-budget">KES 30,400</strong>
                     <small>Budget minus expenses</small>
                 </div>
 
             </div>
+
+            <p id="budget-status" role="status" aria-live="polite">
+                Your budget status will appear here.
+            </p>
         </section>
 
-        <!-- Six Financial Category Cards -->
-        <section class="categories-section"
-                 aria-labelledby="categories-heading">
-
+        <!-- Spending Categories -->
+        <section class="categories-section" aria-labelledby="categories-heading">
             <div class="section-heading">
                 <div>
-                    <h2 id="categories-heading">
-                        Spending Categories
-                    </h2>
+                    <h2 id="categories-heading">Spending Categories</h2>
                     <p>Overview of your monthly finances</p>
                 </div>
-                <span class="section-tag">Sample Data</span>
+                <span class="section-tag">Expense Overview</span>
             </div>
 
             <div class="category-grid">
 
-                <article class="category-card"
-                         tabindex="0">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
                         <span class="category-icon">🍽️</span>
                         <span class="category-label">Food</span>
                     </div>
-                    <strong>KES 2,500</strong>
+                    <strong id="category-food">KES 2,500</strong>
                     <p>Groceries and meals</p>
                     <div class="card-bottom">
                         <span>Monthly spending</span>
-                        <span>12.8%</span>
+                        <span id="percent-food">12.8%</span>
                     </div>
                 </article>
 
-                <article class="category-card"
-                         tabindex="0">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
                         <span class="category-icon">🚌</span>
                         <span class="category-label">Transport</span>
                     </div>
-                    <strong>KES 300</strong>
+                    <strong id="category-transport">KES 300</strong>
                     <p>Bus fare and travel</p>
                     <div class="card-bottom">
                         <span>Monthly spending</span>
-                        <span>1.5%</span>
+                        <span id="percent-transport">1.5%</span>
                     </div>
                 </article>
 
-                <article class="category-card"
-                         tabindex="0">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
                         <span class="category-icon">🏠</span>
                         <span class="category-label">Rent</span>
                     </div>
-                    <strong>KES 15,000</strong>
+                    <strong id="category-rent">KES 15,000</strong>
                     <p>Housing expenses</p>
                     <div class="card-bottom">
                         <span>Monthly spending</span>
-                        <span>76.5%</span>
+                        <span id="percent-rent">76.5%</span>
                     </div>
                 </article>
 
-                <article class="category-card"
-                         tabindex="0">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
                         <span class="category-icon">🎬</span>
                         <span class="category-label">Entertainment</span>
                     </div>
-                    <strong>KES 800</strong>
+                    <strong id="category-entertainment">KES 800</strong>
                     <p>Movies and leisure</p>
                     <div class="card-bottom">
                         <span>Monthly spending</span>
-                        <span>4.1%</span>
+                        <span id="percent-entertainment">4.1%</span>
                     </div>
                 </article>
 
-                <article class="category-card"
-                         tabindex="0">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
                         <span class="category-icon">💰</span>
                         <span class="category-label">Savings</span>
@@ -173,54 +153,49 @@
                     </div>
                 </article>
 
-                <article class="category-card"
-                         tabindex="0">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
                         <span class="category-icon">💡</span>
                         <span class="category-label">Utilities</span>
                     </div>
-                    <strong>KES 1,000</strong>
+                    <strong id="category-utilities">KES 1,000</strong>
                     <p>Internet and services</p>
                     <div class="card-bottom">
                         <span>Monthly spending</span>
-                        <span>5.1%</span>
+                        <span id="percent-utilities">5.1%</span>
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- Existing Add Expense Form -->
-        <section id="add-expense"
-                 class="add-expense-section panel">
-
+        <!-- Add Expense Form -->
+        <section id="add-expense" class="add-expense-section panel">
             <h2>Add Expense</h2>
             <p>Enter your expense details below.</p>
 
             <form id="expense-form">
 
-                <label for="expense-name">
-                    Expense Name:
-                </label>
+                <label for="expense-name">Expense Name:</label>
                 <input
                     type="text"
                     id="expense-name"
                     placeholder="Enter expense name"
+                    required
                 >
 
-                <label for="expense-amount">
-                    Amount (KES):
-                </label>
+                <label for="expense-amount">Amount (KES):</label>
                 <input
                     type="number"
                     id="expense-amount"
                     placeholder="Enter amount"
+                    min="0.01"
+                    step="0.01"
+                    required
                 >
 
-                <label for="expense-category">
-                    Category:
-                </label>
-                <select id="expense-category">
+                <label for="expense-category">Category:</label>
+                <select id="expense-category" required>
                     <option value="">Select a category</option>
                     <option value="Food">Food</option>
                     <option value="Transport">Transport</option>
@@ -231,40 +206,24 @@
                     <option value="Other">Other</option>
                 </select>
 
-                <button type="button">
-                    Add Expense
-                </button>
+                <button type="submit">Add Expense</button>
 
             </form>
         </section>
 
-        <!-- Existing Instructions -->
+        <!-- Instructions -->
         <section class="instructions-section panel">
             <details>
                 <summary>How to Use This Tracker</summary>
-
-                <p>
-                    Enter an expense name, amount,
-                    and category in the form.
-                </p>
-
-                <p>
-                    This is a static dashboard prototype.
-                    The Add Expense button will become
-                    functional in a future version.
-                </p>
-
-                <p>
-                    The dashboard currently displays
-                    sample financial information.
-                </p>
+                <p>Enter an expense name, amount, and category.</p>
+                <p>Click Add Expense to record your spending.</p>
+                <p>Your dashboard totals and expense table will update automatically once the interactive JavaScript is connected.</p>
+                <p>Expenses are currently stored for the active browser session and will reset when the page is reloaded.</p>
             </details>
         </section>
 
-        <!-- Existing Expense Table -->
-        <section id="your-expenses"
-                 class="expenses-section panel">
-
+        <!-- Expense Table -->
+        <section id="your-expenses" class="expenses-section panel">
             <h2>Your Expenses</h2>
 
             <div class="table-wrapper">
@@ -278,51 +237,17 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Groceries</td>
-                            <td>KES 2,500</td>
-                            <td>Food</td>
-                            <td>2026-10-01</td>
-                        </tr>
-                        <tr>
-                            <td>Bus Fare</td>
-                            <td>KES 300</td>
-                            <td>Transport</td>
-                            <td>2026-10-02</td>
-                        </tr>
-                        <tr>
-                            <td>House Rent</td>
-                            <td>KES 15,000</td>
-                            <td>Rent</td>
-                            <td>2026-10-03</td>
-                        </tr>
-                        <tr>
-                            <td>Movie Ticket</td>
-                            <td>KES 800</td>
-                            <td>Entertainment</td>
-                            <td>2026-10-04</td>
-                        </tr>
-                        <tr>
-                            <td>Internet Bundle</td>
-                            <td>KES 1,000</td>
-                            <td>Utilities</td>
-                            <td>2026-10-05</td>
-                        </tr>
+                    <tbody id="expense-table-body">
+                        <!-- JavaScript will display expenses here -->
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Existing Budgeting Video -->
-        <section id="budget-tips"
-                 class="video-section panel">
-
+        <!-- Budgeting Video -->
+        <section id="budget-tips" class="video-section panel">
             <h2>Budgeting Tips Video</h2>
-
-            <p>
-                Learn more about managing your money.
-            </p>
+            <p>Learn more about managing your money.</p>
 
             <iframe
                 width="560"
@@ -335,15 +260,12 @@
         </section>
 
         <footer class="dashboard-footer">
-            <p>
-                SpendWise Dashboard |
-                PLP Web Development Week 4
-            </p>
+            <p>SpendWise Dashboard | PLP Web Development</p>
         </footer>
 
     </main>
-
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
